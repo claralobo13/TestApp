@@ -26,8 +26,8 @@ public class MainActivity extends AppCompatActivity {
     }
     private void Add(){
 
-        txt.setText("Working with git");
-        txt2.setText("Launching second activity");
+        txt.setText("Pull request");
+        txt2.setText("GITHUB Command");
         Intent i=new Intent(MainActivity.this,SecondActivity.class);
         startActivity(i);
 
