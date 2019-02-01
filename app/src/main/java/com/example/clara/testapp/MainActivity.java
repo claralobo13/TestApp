@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
     }
     private void Add(){
 
+        txt.setText("Working with git");
         Intent i=new Intent(MainActivity.this,SecondActivity.class);
         startActivity(i);
 
