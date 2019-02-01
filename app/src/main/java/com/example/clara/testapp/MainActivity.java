@@ -9,13 +9,14 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
      Button b;
-     TextView txt;
+     TextView txt,txt2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         b=findViewById(R.id.btn);
         txt=findViewById(R.id.txt);
+        txt2=findViewById(R.id.txt2);
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -26,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
     private void Add(){
 
         txt.setText("Working with git");
+        txt2.setText("Launching second activity");
         Intent i=new Intent(MainActivity.this,SecondActivity.class);
         startActivity(i);
 
